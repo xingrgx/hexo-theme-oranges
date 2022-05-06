@@ -144,44 +144,21 @@ footer:
     # name: 名称
     # icon: 图标，目前仅支持IconFont部分图标
     # path: 地址
+    # -
+    #   # rss需安装 hexo-generator-feed 插件
+    #   # 具体参照https://github.com/hexojs/hexo-generator-feed
+    #   name: rss
+    #   icon: rss
+    #   path: /atom.xml
     -
-      name: github
-      icon: github
-      path: https://github.com/zchengsite/hexo-theme-oranges
-    -
-      name: email
-      icon: envelope
-      path: 
-    -
-      name: facebook
-      icon: facebooksquare
+      name:
+      icon:
       path:
-    -
-      name: twitter
-      icon: twitter
-      path:
-    -
-      name: wechat
-      icon: wechat
-      path:
-    -
-      name: weibo
-      icon: weibo
-      path:
-    -
-      # rss需安装 hexo-generator-feed 插件
-      # 具体参照https://github.com/hexojs/hexo-generator-feed
-      name: rss
-      icon: rss
-      path: /atom.xml
 
   more:
     -
-      name: Copyright © Oranges 2021
-      path: https://github.com/zchengsite/hexo-theme-oranges
-    -
-      name: Theme by Oranges | Powered by Hexo
-      path: https://github.com/zchengsite/hexo-theme-oranges
+      name: 
+      path: 
 
 # 文章搜索
 search:
@@ -194,7 +171,7 @@ colorSwitch:
 
 # 文章分享
 postShare:
-  enable: true
+  enable: false
 
   twitter:
     enable: true

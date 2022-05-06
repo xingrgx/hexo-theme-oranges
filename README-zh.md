@@ -521,3 +521,6 @@ MIT
 
 当文章的 front-matter 头的 `comments` 项得值为 true 时，即 `page.comments` 为 true 时，为当前文章开启评论。
 
+## 页脚
+
+删除页脚

@@ -90,7 +90,7 @@ navbar:
     key: archives
   -
     name: 分类
-    enable: true
+    enable: false
     path: /x/categories/
     key: categories
   -
@@ -108,6 +108,11 @@ navbar:
     enable: true
     path: /x/about/
     key: about
+  - 
+    name: 链接
+    enable: true
+    path: /x/link/
+    key: link
 
 # 文章目录
 catalog:
@@ -123,10 +128,13 @@ friends:
   # site: 地址
   # meta: 描述
   -
-    nickname: 
-    site: 
+    nickname: Zcheng
+    site: https://zcheng.site/
     meta:
-
+  -
+    nickname: Hexo
+    site: https://hexo.io/
+    meta:
 
 # 页脚信息
 footer:

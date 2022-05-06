@@ -474,5 +474,15 @@ MIT
     <% } %>
 ```
 
-3. 不写 `sources/x/link/link.md` 中的 front-matter头中`type` 项，即可显示markdown内容。
+3. 在 `_config.yml` >> `navbar:` 中新增项：
+
+```js
+  - 
+    name: 链接
+    enable: true
+    path: /x/link/
+    key: link
+```
+
+4. 不写 `sources/x/link/link.md` 中的 front-matter头中`type` 项，即可显示markdown内容。
 

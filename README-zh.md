@@ -453,3 +453,7 @@ MIT
 1. 创建 `archives`, `categories`, `tags`, `about` 四个页面后，将这个四个页面放在 `sources/x/` 目录下；
 2. 修改主题的 `_config.yml` >> `navbar:` >> `path:` 的值为 `/x/<page-name>`；
 3. 修改项目配置文件`_config.yml` >> `Directory` >> `archive_dir` 等的值为 `x/archives`。
+
+## 语言
+
+项目配置文件`_config.yml` >> `language: zh-CN`

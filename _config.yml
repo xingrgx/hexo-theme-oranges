@@ -79,34 +79,34 @@ comments:
 # 主题页面导航栏
 navbar:
   -
-    name: Home
+    name: 首页
     enable: true
     path: /
     key: home
   -
-    name: Archives
+    name: 归档
     enable: true
-    path: /archives/
+    path: /x/archives/
     key: archives
   -
-    name: Categories
+    name: 分类
     enable: false
-    path: /categories/
+    path: /x/categories/
     key: categories
   -
-    name: Tags
+    name: 标签
     enable: true
-    path: /tags/
+    path: /x/tags/
     key: tags
+  # -
+  #   name: Friends
+  #   enable: true
+  #   path: /friends/
+  #   key: friends
   -
-    name: Friends
+    name: 关于
     enable: true
-    path: /friends/
-    key: friends
-  -
-    name: About
-    enable: true
-    path: /about/
+    path: /x/about/
     key: about
 
 # 文章目录

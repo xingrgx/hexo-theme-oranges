@@ -73,8 +73,8 @@ comments:
   
   # waline https://waline.js.org
   waline:
-    enable: false
-    serverURL:
+    enable: true
+    serverURL: https://comment.xxx.com
 
 # 主题页面导航栏
 navbar:

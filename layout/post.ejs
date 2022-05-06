@@ -174,7 +174,7 @@ MathJax = {
       <% } %>
     </div>
     <%- partial("_partial/catalog") %>
-    <% if(theme.comments.enable) { %>
+    <% if(theme.comments.enable && page.comments) { %>
       <div class="comments-container">
         <%- partial("_partial/comments") %>
       </div>

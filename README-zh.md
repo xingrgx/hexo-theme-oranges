@@ -484,5 +484,40 @@ MIT
     key: link
 ```
 
-4. 不写 `sources/x/link/link.md` 中的 front-matter头中`type` 项，即可显示markdown内容。
+4. 不写 `sources/x/link/link.md` 中的 front-matter 头中`type` 项，即可显示markdown内容。
+
+## 永久访问链接
+
+配置文章的[永久访问链接](https://github.com/rozbo/hexo-abbrlink)
+
+  - 安装插件
+
+    ```bash
+    npm install hexo-abbrlink --save
+    ```
+
+  - 修改项目配置文件
+
+    ```bash
+    permalink: posts/:abbrlink/
+    abbrlink:
+      alg: crc32      #support crc16(default) and crc32
+      rep: hex        #support dec(default) and hex
+      drafts: true   #(true)Process draft,(false)Do not process draft. false(default) 
+      auto_title: false #enable auto title, it can auto fill the title by path
+      auto_date: false #enable auto date, it can auto fill the date by time today
+      force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink.
+    ```
+
+## 评论
+
+使用 waline。
+
+修改主题下的 `post.ejs` 文件：
+
+```js
+<% if(theme.comments.enable && page.comments) { %>
+```
+
+当文章的 front-matter 头的 `comments` 项得值为 true 时，即 `page.comments` 为 true 时，为当前文章开启评论。
 

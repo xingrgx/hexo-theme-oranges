@@ -362,7 +362,7 @@ lazyload:
   现在页面部分元素支持以不同语言显示，通过修改项目配置文件`_config.yml`（非主题配置文件）中的`language`:
 
   举几个例子：
-  
+
   英文：
   ```yml
   language: en
@@ -377,7 +377,7 @@ lazyload:
   ```
 
   默认值为`en`，可选项在主题下`languages`语言文件中查看，修改为对应文件名即可。
-  
+
 </details>
 
 <details>
@@ -457,3 +457,22 @@ MIT
 ## 语言
 
 项目配置文件`_config.yml` >> `language: zh-CN`
+
+## 新增页面
+
+1. `hexo new page link`
+2. 在 `themes\oranges\layout\post.ejs` 文件中新增代码：
+
+```js
+  <% if(page.type === "link") { %>
+    <!-- 新增link页 url形式：https://yoursite/x/link/ -->
+      <div class="container about-index">
+        <div class="markdown-body">
+          <%- page.content %>
+        </div>
+      </div>
+    <% } %>
+```
+
+3. 不写 `sources/x/link/link.md` 中的 front-matter头中`type` 项，即可显示markdown内容。
+
